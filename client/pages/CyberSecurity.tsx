@@ -101,7 +101,7 @@ export default function CyberSecurity() {
               </Link>
               <Link to="/contact">
                 <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Emergency Response
+                 Get Free Quote
                 </Button>
               </Link>
             </div>
