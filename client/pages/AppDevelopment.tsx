@@ -126,28 +126,28 @@ export default function AppDevelopment() {
                 title: "React Native",
                 description: "Cross-platform apps with native performance and shared codebase",
                 features: ["iOS & Android", "Fast Development", "Code Reusability", "Native Performance"],
-                color: "from-blue-500 to-cyan-500"
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Code,
                 title: "Flutter Development",
                 description: "Google's UI toolkit for beautiful, natively compiled applications",
                 features: ["Single Codebase", "Hot Reload", "Rich Widgets", "High Performance"],
-                color: "from-blue-600 to-indigo-600"
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Layers,
                 title: "Native iOS/Android",
                 description: "Platform-specific apps leveraging full native capabilities",
                 features: ["Swift/Kotlin", "Platform Optimization", "Full API Access", "Best Performance"],
-                color: "from-purple-500 to-pink-500"
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Monitor,
                 title: "Progressive Web Apps",
                 description: "Web apps that work like native mobile applications",
                 features: ["Offline Support", "Push Notifications", "App-like Experience", "Cross-Platform"],
-                color: "from-green-500 to-emerald-500"
+                color: "from-orange-500 to-red-500"
               }
             ].map((service, index) => (
               <Card key={index} className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-2 bg-background border-border relative overflow-hidden">

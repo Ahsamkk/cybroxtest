@@ -126,28 +126,28 @@ export default function GraphicDesign() {
                 title: "Marketing Materials",
                 description: "Eye-catching designs for brochures, flyers, banners, and promotional content",
                 features: ["Print Design", "Digital Banners", "Social Media Graphics", "Brochures & Flyers"],
-                color: "from-pink-500 to-rose-500"
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Eye,
                 title: "UI/UX Design",
                 description: "User-centered design for websites and applications that convert",
                 features: ["User Research", "Wireframing", "Prototyping", "Visual Design"],
-                color: "from-blue-500 to-indigo-500"
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Image,
-                title: "Print Design",
-                description: "Professional print materials from business cards to large format displays",
-                features: ["Business Cards", "Letterheads", "Posters", "Packaging Design"],
-                color: "from-purple-500 to-violet-500"
+                title: "Logo Design",
+                description: "Unique and memorable logos that represent your brand’s identity",
+                features: ["Brand Marks & Wordmarks", "Minimalist & Modern Logos", "Custom Iconography", "Brand Cohesion"],
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Sparkles,
                 title: "Digital Assets",
                 description: "Digital graphics for websites, social media, and online marketing",
                 features: ["Social Media Kits", "Email Templates", "Web Graphics", "Digital Illustrations"],
-                color: "from-emerald-500 to-teal-500"
+                color: "from-orange-500 to-red-500"
               }
             ].map((service, index) => (
               <Card key={index} className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-2 bg-background border-border relative overflow-hidden">

@@ -128,21 +128,21 @@ export default function WebDevelopment() {
                 title: "React & Next.js",
                 description: "Modern frontend frameworks for dynamic, high-performance web applications",
                 features: ["Server-Side Rendering", "Static Generation", "SEO Optimized", "Fast Loading"],
-                color: "from-blue-500 to-cyan-500"
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Server,
                 title: "Full-Stack Solutions",
                 description: "Complete web applications with robust backend architecture",
                 features: ["API Development", "Database Design", "Authentication", "Cloud Integration"],
-                color: "from-emerald-500 to-green-500"
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Globe,
                 title: "E-commerce Platforms",
                 description: "Custom online stores with payment integration and inventory management",
                 features: ["Payment Gateway", "Inventory System", "Admin Dashboard", "Mobile Responsive"],
-                color: "from-purple-500 to-pink-500"
+                color: "from-orange-500 to-red-500"
               },
               {
                 icon: Zap,
