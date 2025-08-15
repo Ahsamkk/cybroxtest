@@ -276,7 +276,7 @@ export default function AppDevelopment() {
       </section>
 
       {/* Technologies Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
         <div className="container mx-auto max-w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">Technologies We Use</h2>
@@ -299,7 +299,7 @@ export default function AppDevelopment() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/10 to-blue-500/10 opacity-0 w-full" ref={addToRefs}>
@@ -321,11 +321,11 @@ export default function AppDevelopment() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Link to="/contact">
+              {/* <Link to="/contact">
                 <Button size="lg" variant="outline" className="text-lg px-12 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
                   Get Free Consultation
                 </Button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

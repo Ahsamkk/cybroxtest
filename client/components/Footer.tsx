@@ -5,7 +5,7 @@ export function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-6 sm:mb-8">
           <div className="sm:col-span-2 lg:col-span-2">
             <div className="text-2xl sm:text-3xl mb-3 sm:mb-4">
-              <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+              <div className="w-20 h-20 flex items-center justify-center">
                 <img src="Main-Logo.webp" alt="Logo" className="w-20 h-20" />
               </div>
             </div>
