@@ -24,7 +24,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <BrowserRouter>
-      <ScrollT oTop />
+      <ScrollToTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
