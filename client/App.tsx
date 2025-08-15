@@ -16,7 +16,8 @@ import AppDevelopment from "./pages/AppDevelopment";
 import WebDevelopment from "./pages/WebDevelopment";
 import GraphicDesign from "./pages/GraphicDesign";
 import NotFound from "./pages/NotFound";
-import ScrollToTop from "@/components/ScrollToTop";
+import { ScrollTop } from "./components/ScrollTop";
+
 
 const queryClient = new QueryClient();
 
@@ -24,7 +25,7 @@ const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
       <BrowserRouter>
-      <ScrollToTop />
+      <ScrollTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
