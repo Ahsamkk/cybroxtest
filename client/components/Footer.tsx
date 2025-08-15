@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 export function Footer() {
   return (
     <footer className="border-t border-border py-12 sm:py-16 px-4 sm:px-6 lg:px-8 bg-card/30 w-full">
@@ -48,7 +50,9 @@ export function Footer() {
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Cyber Security Services</li>
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">App Development</li>
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Web Development</li> 
-              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Graphic Design</li>
+              <Link to="graphic-design">
+                <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Graphic Design</li>
+              </Link>
             </ul>
           </div>
           <div>
