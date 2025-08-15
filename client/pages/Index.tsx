@@ -152,53 +152,59 @@ export default function Index() {
                 title: "Cyber Security Services",
                 description: "Protecting your digital assets and ensuring compliance with industry standards",
                 features: ["VAPT", "GRC","Security Awareness","Social Engineering"],
-                color: "from-orange-500 to-red-500"
+                color: "from-orange-500 to-red-500",
+                link: "/services/cyber-security"
               },
               {
                 icon: Smartphone,
                 title: "App Development", 
                 description: "Native and cross-platform mobile applications for iOS and Android platforms",
                 features: ["React Native", "Flutter Development", "Native iOS/Android", "Progressive Web Apps"],
-                color: "from-orange-500 to-red-500"
+                color: "from-orange-500 to-red-500",
+                link: "/services/app-development"
               },
               {
                 icon: Code,
                 title: "Web Development",
                 description: "Custom websites and web applications built with modern technologies and best practices",
                 features: ["React & Next.js", "Full-Stack Solutions", "E-commerce Platforms", "SEO Optimized"],
-                color: "from-orange-500 to-red-500"
+                color: "from-orange-500 to-red-500",
+                link: "/services/web-development"
               },
               {
                 icon: Eye,
                 title: "Graphic Design",
                 description: "Visual content that communicates your message and engages your target audience",
                 features: ["Marketing Materials", "UI/UX Design", "Print Design", "Digital Assets"],
-                color: "from-orange-500 to-red-500"
+                color: "from-orange-500 to-red-500",
+                link: "/services/graphic-design"
               }
             ].map((service, index) => (
               <Card key={index} className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-3 bg-background border-border relative overflow-hidden">
                 <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
-                <CardContent className="p-8 relative z-10">
-                  <div className="mb-6">
-                    <div className="inline-flex p-4 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
-                      <service.icon className="h-8 w-8" />
+                <Link to={service.link}>
+                  <CardContent className="p-8 relative z-10">
+                    <div className="mb-6">
+                      <div className="inline-flex p-4 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
+                        <service.icon className="h-8 w-8" />
+                      </div>
                     </div>
-                  </div>
-                  <h3 className="text-2xl font-semibold mb-4 group-hover:text-primary transition-colors">
-                    {service.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  <ul className="space-y-3">
-                    {service.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center text-sm">
-                        <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </CardContent>
+                    <h3 className="text-2xl font-semibold mb-4 group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-muted-foreground mb-6 leading-relaxed">
+                      {service.description}
+                    </p>
+                    <ul className="space-y-3">
+                      {service.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-center text-sm">
+                          <CheckCircle className="w-4 h-4 text-primary mr-3 flex-shrink-0" />
+                          {feature}
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Link>
               </Card>
             ))}
           </div>
