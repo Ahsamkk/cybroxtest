@@ -16,15 +16,15 @@ import AppDevelopment from "./pages/AppDevelopment";
 import WebDevelopment from "./pages/WebDevelopment";
 import GraphicDesign from "./pages/GraphicDesign";
 import NotFound from "./pages/NotFound";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const queryClient = new QueryClient();
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
     <TooltipProvider>
-      <Toaster />
-      <Sonner />
       <BrowserRouter>
+      <ScrollT oTop />
         <Layout>
           <Routes>
             <Route path="/" element={<Index />} />
