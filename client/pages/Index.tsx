@@ -153,7 +153,7 @@ export default function Index() {
                 description: "Protecting your digital assets and ensuring compliance with industry standards",
                 features: ["VAPT", "GRC","Security Awareness","Social Engineering"],
                 color: "from-orange-500 to-red-500",
-                link: "/services/cyber-security"
+                link: "/cyber-security"
               },
               {
                 icon: Smartphone,
@@ -161,7 +161,7 @@ export default function Index() {
                 description: "Native and cross-platform mobile applications for iOS and Android platforms",
                 features: ["React Native", "Flutter Development", "Native iOS/Android", "Progressive Web Apps"],
                 color: "from-orange-500 to-red-500",
-                link: "/services/app-development"
+                link: "/app-development"
               },
               {
                 icon: Code,
@@ -169,7 +169,7 @@ export default function Index() {
                 description: "Custom websites and web applications built with modern technologies and best practices",
                 features: ["React & Next.js", "Full-Stack Solutions", "E-commerce Platforms", "SEO Optimized"],
                 color: "from-orange-500 to-red-500",
-                link: "/services/web-development"
+                link: "/web-development"
               },
               {
                 icon: Eye,
@@ -177,7 +177,7 @@ export default function Index() {
                 description: "Visual content that communicates your message and engages your target audience",
                 features: ["Marketing Materials", "UI/UX Design", "Print Design", "Digital Assets"],
                 color: "from-orange-500 to-red-500",
-                link: "/services/graphic-design"
+                link: "/graphic-design"
               }
             ].map((service, index) => (
               <Card key={index} className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-3 bg-background border-border relative overflow-hidden">

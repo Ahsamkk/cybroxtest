@@ -34,21 +34,17 @@ export function Header() {
             <span className="hover:text-primary transition-colors text-sm lg:text-base cursor-pointer">Services</span>
             <div className="absolute top-full left-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
               <div className="p-2">
-                <Link to="/services/cyber-security" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
+                <Link to="/cyber-security" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
                   Cyber Security Services
                 </Link>
-                <Link to="/services/app-development" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
+                <Link to="/app-development" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
                   App Development
                 </Link>
-                <Link to="/services/web-development" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
+                <Link to="/web-development" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
                   Web Development
                 </Link>
-                <Link to="/services/graphic-design" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
+                <Link to="/graphic-design" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
                   Graphic Design
-                </Link>
-                <div className="border-t border-border my-2"></div>
-                <Link to="/services" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors font-medium">
-                  All Services
                 </Link>
               </div>
             </div>
@@ -105,28 +101,28 @@ export function Header() {
               {isMobileServicesOpen && (
                 <div className="ml-4 mt-2 space-y-2">
                   <Link
-                    to="/services/cyber-security"
+                    to="/cyber-security"
                     className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Cyber Security Services
                   </Link>
                   <Link
-                    to="/services/app-development"
+                    to="/app-development"
                     className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     App Development
                   </Link>
                   <Link
-                    to="/services/web-development"
+                    to="/web-development"
                     className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     Web Development
                   </Link>
                   <Link
-                    to="/services/graphic-design"
+                    to="/graphic-design"
                     className="block py-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
