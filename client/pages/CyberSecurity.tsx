@@ -226,7 +226,7 @@ export default function CyberSecurity() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-red-500/20 rounded-3xl p-8 relative overflow-hidden">
                 {/* Animated Security Icons */}
-                <div className="absolute top-8 left-8 p-4 bg-primary/20 rounded-lg animate-float-slow">
+                {/* <div className="absolute top-8 left-8 p-4 bg-primary/20 rounded-lg animate-float-slow">
                   <Shield className="w-8 h-8 text-primary" />
                 </div>
                 <div className="absolute top-8 right-8 p-4 bg-primary/20 rounded-lg animate-float-reverse">
@@ -237,7 +237,7 @@ export default function CyberSecurity() {
                 </div>
                 <div className="absolute bottom-8 right-8 p-4 bg-primary/20 rounded-lg animate-float-slow">
                   <AlertTriangle className="w-8 h-8 text-primary" />
-                </div>
+                </div> */}
                 
                 {/* Central Security Hub */}
                 <div className="w-full h-full bg-card rounded-2xl flex items-center justify-center relative overflow-hidden">

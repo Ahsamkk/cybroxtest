@@ -55,9 +55,9 @@ export default function GraphicDesign() {
         
         {/* Animated Design Elements */}
         <div className="absolute inset-0 z-10">
-          <div className="absolute top-1/4 left-20 w-4 h-4 bg-pink-500 rounded-full animate-move-up-down"></div>
-          <div className="absolute bottom-1/3 left-24 w-3 h-3 bg-purple-500 rounded-full animate-move-up-down-delayed"></div>
-          <div className="absolute top-1/3 right-20 w-2 h-2 bg-yellow-500 rounded-full animate-move-up-down-reverse"></div>
+          <div className="absolute top-1/4 left-20 w-4 h-4 bg-primary rounded-full animate-move-up-down"></div>
+          <div className="absolute bottom-1/3 left-24 w-3 h-3 bg-primary rounded-full animate-move-up-down-delayed"></div>
+          <div className="absolute top-1/3 right-20 w-2 h-2 bg-primary rounded-full animate-move-up-down-reverse"></div>
           <div className="absolute bottom-1/4 right-24 w-4 h-4 bg-primary rounded-full animate-move-up-down-fast"></div>
 
           {/* Design Grid Pattern */}
@@ -230,7 +230,7 @@ export default function GraphicDesign() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-purple-500/20 rounded-3xl p-8 relative overflow-hidden">
                 {/* Design Tools */}
-                <div className="absolute top-8 left-8 w-16 h-16 bg-card rounded-xl border border-border animate-float-slow flex items-center justify-center">
+                {/* <div className="absolute top-8 left-8 w-16 h-16 bg-card rounded-xl border border-border animate-float-slow flex items-center justify-center">
                   <Palette className="w-6 h-6 text-primary" />
                 </div>
                 <div className="absolute top-8 right-8 w-16 h-16 bg-card rounded-xl border border-border animate-float-reverse flex items-center justify-center">
@@ -241,7 +241,7 @@ export default function GraphicDesign() {
                 </div>
                 <div className="absolute bottom-8 right-8 w-16 h-16 bg-card rounded-xl border border-border animate-float-slow flex items-center justify-center">
                   <Layers className="w-6 h-6 text-primary" />
-                </div>
+                </div> */}
                 
                 {/* Central Design Canvas */}
                 <div className="w-full h-full bg-card rounded-2xl flex items-center justify-center relative overflow-hidden">

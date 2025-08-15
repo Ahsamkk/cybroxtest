@@ -55,9 +55,9 @@ export default function WebDevelopment() {
         
         {/* Animated Code Elements */}
         <div className="absolute inset-0 z-10">
-          <div className="absolute top-1/4 left-20 w-3 h-3 bg-emerald-500 rounded-full animate-move-up-down"></div>
-          <div className="absolute bottom-1/3 left-24 w-2 h-2 bg-cyan-500 rounded-full animate-move-up-down-delayed"></div>
-          <div className="absolute top-1/3 right-20 w-2 h-2 bg-purple-500 rounded-full animate-move-up-down-reverse"></div>
+          <div className="absolute top-1/4 left-20 w-3 h-3 bg-primary rounded-full animate-move-up-down"></div>
+          <div className="absolute bottom-1/3 left-24 w-2 h-2 bg-primary rounded-full animate-move-up-down-delayed"></div>
+          <div className="absolute top-1/3 right-20 w-2 h-2 bg-primary rounded-full animate-move-up-down-reverse"></div>
           <div className="absolute bottom-1/4 right-24 w-3 h-3 bg-primary rounded-full animate-move-up-down-fast"></div>
 
           {/* Code Matrix Pattern */}

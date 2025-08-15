@@ -55,9 +55,9 @@ export default function AppDevelopment() {
         
         {/* Animated Mobile Elements */}
         <div className="absolute inset-0 z-10">
-          <div className="absolute top-1/4 left-20 w-3 h-3 bg-blue-500 rounded-full animate-move-up-down"></div>
-          <div className="absolute bottom-1/3 left-24 w-2 h-2 bg-green-500 rounded-full animate-move-up-down-delayed"></div>
-          <div className="absolute top-1/3 right-20 w-2 h-2 bg-purple-500 rounded-full animate-move-up-down-reverse"></div>
+          <div className="absolute top-1/4 left-20 w-3 h-3 bg-primary rounded-full animate-move-up-down"></div>
+          <div className="absolute bottom-1/3 left-24 w-2 h-2 bg-primary rounded-full animate-move-up-down-delayed"></div>
+          <div className="absolute top-1/3 right-20 w-2 h-2 bg-primary rounded-full animate-move-up-down-reverse"></div>
           <div className="absolute bottom-1/4 right-24 w-3 h-3 bg-primary rounded-full animate-move-up-down-fast"></div>
 
           {/* App Icons Pattern */}
@@ -230,7 +230,7 @@ export default function AppDevelopment() {
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-blue-500/20 rounded-3xl p-8 relative overflow-hidden">
                 {/* Device Mockups */}
-                <div className="absolute top-8 left-8 w-16 h-24 bg-card rounded-lg border border-border animate-float-slow flex items-center justify-center">
+                {/* <div className="absolute top-8 left-8 w-16 h-24 bg-card rounded-lg border border-border animate-float-slow flex items-center justify-center">
                   <Smartphone className="w-6 h-6 text-primary" />
                 </div>
                 <div className="absolute top-8 right-8 w-20 h-16 bg-card rounded-lg border border-border animate-float-reverse flex items-center justify-center">
@@ -238,7 +238,7 @@ export default function AppDevelopment() {
                 </div>
                 <div className="absolute bottom-8 left-8 w-24 h-16 bg-card rounded-lg border border-border animate-float-fast flex items-center justify-center">
                   <Monitor className="w-10 h-10 text-primary" />
-                </div>
+                </div> */}
                 
                 {/* Central App Icon */}
                 <div className="w-full h-full bg-card rounded-2xl flex items-center justify-center relative overflow-hidden">
