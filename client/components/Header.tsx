@@ -21,7 +21,7 @@ export function Header() {
       <div className="container mx-auto px-4 py-2 flex items-center justify-between max-w-full">
         <div className="text-xl md:text-2xl">
           <Link to="/">
-            <div className="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+            <div className="w-20 h-20 flex items-center justify-center">
               <img src="Main-Logo.webp" alt="Logo" className="w-20 h-20" />
             </div>
           </Link>
