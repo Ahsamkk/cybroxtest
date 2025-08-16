@@ -128,13 +128,6 @@ export function Header() {
                   >
                     Graphic Design
                   </Link>
-                  <Link
-                    to="/services"
-                    className="block py-2 text-sm text-primary font-medium"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    All Services
-                  </Link>
                 </div>
               )}
             </div>

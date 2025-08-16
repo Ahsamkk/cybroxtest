@@ -50,8 +50,8 @@ export function Footer() {
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Cyber Security Services</li>
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">App Development</li>
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Web Development</li> 
-              <Link to="graphic-design">
-                <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Graphic Design</li>
+              <Link to="graphic-design" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">
+                <li>Graphic Design</li>
               </Link>
             </ul>
           </div>
