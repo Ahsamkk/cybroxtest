@@ -101,11 +101,6 @@ export default function WebDevelopment() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              <Link to="/contact">
-                <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Get Free Quote
-                </Button>
-              </Link>
             </div>
           </div>
         </div>
@@ -380,11 +375,6 @@ export default function WebDevelopment() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              {/* <Link to="/contact">
-                <Button size="lg" variant="outline" className="text-lg px-12 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  Get Free Quote
-                </Button>
-              </Link> */}
             </div>
           </div>
         </div>
