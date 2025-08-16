@@ -47,12 +47,11 @@ export function Footer() {
           <div>
             <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Services</h4>
             <ul className="space-y-2 sm:space-y-3 text-muted-foreground">
-              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Cyber Security Services</li>
-              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">App Development</li>
-              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Web Development</li> 
-              <Link to="graphic-design" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">
-                <li>Graphic Design</li>
-              </Link>
+              <li><Link to="cyber-security" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Cyber Security Services</Link></li>
+              <li><Link to="app-development" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">App Development</Link></li>
+              <li><Link to="web-development" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Web Development</Link></li> 
+              <li><Link to="graphic-design" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Graphic Design</Link></li>
+              
             </ul>
           </div>
           <div>
