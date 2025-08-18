@@ -17,7 +17,7 @@ export function Header() {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-[#000000] border-b border-border">
+    <nav className="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-2 flex items-center justify-between max-w-full">
         <div className="text-xl md:text-2xl">
           <Link to="/">
