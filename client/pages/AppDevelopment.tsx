@@ -105,7 +105,7 @@ export default function AppDevelopment() {
       </section>
 
       {/* Development Services Section */}
-      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
         <div className="container mx-auto max-w-full">
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">Our Development Services</h2>
@@ -170,90 +170,6 @@ export default function AppDevelopment() {
                 </CardContent>
               </Card>
             ))}
-          </div>
-        </div>
-      </section> */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 opacity-0 w-full" ref={addToRefs}>
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Our Development Services</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Comprehensive mobile solutions from concept to deployment, leveraging cutting-edge technologies to deliver exceptional user experiences across all platforms.
-            </p>
-          </div>
-
-          <div className="space-y-16">
-            {/* React Native */}
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-xl bg-primary/10 text-primary">
-                    <Smartphone className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-3xl font-bold">React Native Development</h3>
-                </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  React Native represents the perfect balance between development efficiency and native performance. Our team leverages Facebook's powerful framework to create cross-platform mobile applications that deliver near-native performance while sharing a significant portion of code between iOS and Android platforms, dramatically reducing development time and costs.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  With React Native, we can rapidly prototype and iterate on your app concept while maintaining the flexibility to access platform-specific features when needed. Our expertise includes integrating complex native modules, implementing sophisticated animations, and optimizing performance to ensure your app meets the highest standards of both app stores.
-                </p>
-              </div>
-            </div>
-
-            {/* Flutter Development */}
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-xl bg-primary/10 text-primary">
-                    <Code className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-3xl font-bold">Flutter Development</h3>
-                </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Google's Flutter framework enables us to create visually stunning applications with exceptional performance from a single codebase. Our Flutter development expertise extends beyond basic app creation to include complex custom widgets, advanced animations, and platform integrations that showcase the framework's full potential for creating beautiful, natively compiled applications.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Flutter's hot reload capability accelerates our development process, allowing for rapid experimentation and refinement. We specialize in creating pixel-perfect designs that match your brand identity while leveraging Flutter's comprehensive widget library and custom graphics capabilities to deliver unique user experiences that stand out in competitive markets.
-                </p>
-              </div>
-            </div>
-
-            {/* Native Development */}
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-xl bg-primary/10 text-primary">
-                    <Layers className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-3xl font-bold">Native iOS & Android</h3>
-                </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  For applications requiring maximum performance and platform-specific optimization, our native development services deliver uncompromising quality using Swift for iOS and Kotlin for Android. This approach provides complete access to platform APIs, hardware capabilities, and the latest features as soon as they're released by Apple and Google.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Native development is ideal for performance-critical applications, complex graphics-intensive apps, or solutions requiring deep integration with device hardware and operating system features. Our team's expertise in platform-specific design patterns ensures your app feels naturally integrated into each ecosystem while delivering optimal performance and user experience.
-                </p>
-              </div>
-            </div>
-
-            {/* Progressive Web Apps */}
-            <div className="max-w-4xl mx-auto">
-              <div className="space-y-6">
-                <div className="inline-flex items-center gap-3 mb-4">
-                  <div className="p-3 rounded-xl bg-primary/10 text-primary">
-                    <Monitor className="h-6 w-6" />
-                  </div>
-                  <h3 className="text-3xl font-bold">Progressive Web Apps</h3>
-                </div>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  Progressive Web Apps represent the evolution of web applications, combining the reach of the web with the experience of native mobile applications. Our PWA development creates applications that work seamlessly across all devices and platforms while providing app-like experiences including offline functionality, push notifications, and home screen installation.
-                </p>
-                <p className="text-lg text-muted-foreground leading-relaxed">
-                  PWAs offer significant advantages including faster deployment, automatic updates, and broader accessibility without app store dependencies. We design PWAs that progressively enhance based on device capabilities, ensuring optimal performance on everything from basic smartphones to high-end devices while maintaining consistent functionality across all platforms.
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
