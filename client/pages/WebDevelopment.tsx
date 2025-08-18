@@ -276,7 +276,7 @@ export default function WebDevelopment() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
         <div className="container mx-auto max-w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Why Choose Our Web Development</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Why Choose Cybrox</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Delivering excellence in every aspect of web development
             </p>
@@ -328,32 +328,6 @@ export default function WebDevelopment() {
           </div>
         </div>
       </section>
-
-      {/* Technologies Grid */}
-      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 opacity-0 w-full" ref={addToRefs}>
-        <div className="container mx-auto max-w-full">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Technologies & Frameworks</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Cutting-edge tools for modern web development
-            </p>
-          </div>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8">
-            {[
-              "React", "Next.js", "TypeScript", "Node.js", "Python", "PostgreSQL",
-              "MongoDB", "AWS", "Docker", "Vercel", "Tailwind", "GraphQL"
-            ].map((tech, index) => (
-              <div key={index} className="text-center group">
-                <div className="w-16 h-16 bg-primary/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
-                  <Code className="w-8 h-8 text-primary group-hover:text-primary-foreground" />
-                </div>
-                <h3 className="font-semibold text-sm">{tech}</h3>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section> */}
 
       {/* CTA Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/10 to-emerald-500/10 opacity-0 w-full" ref={addToRefs}>

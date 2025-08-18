@@ -272,7 +272,7 @@ export default function GraphicDesign() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
         <div className="container mx-auto max-w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Design Specialties</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Why Choose Cybrox</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Expertise across multiple design disciplines and industries
             </p>
