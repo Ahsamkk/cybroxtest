@@ -42,7 +42,23 @@ export function Footer() {
                   <span className="text-xs sm:text-sm font-bold">in</span>
                 </div>
               </a>
-              </div>
+              <a
+                href="mailto:yourgmail@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div className="w-8 h-8 sm:w-10 sm:h-10 bg-primary/10 rounded-lg flex items-center justify-center hover:bg-primary hover:text-primary-foreground cursor-pointer transition-colors">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    className="w-4 h-4 sm:w-5 sm:h-5"
+                  >
+                    <path d="M12 13.065L1.5 6.75V18a2.25 2.25 0 0 0 2.25 2.25h16.5A2.25 2.25 0 0 0 22.5 18V6.75l-10.5 6.315zM12 10.935l10.5-6.435H1.5L12 10.935z"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
           </div>
           <div>
             <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Services</h4>
