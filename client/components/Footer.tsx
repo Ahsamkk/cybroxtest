@@ -43,7 +43,7 @@ export function Footer() {
                 </div>
               </a>
               <a
-                href="mailto:yourgmail@gmail.com"
+                href="mailto:Infocybroxs@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
               >
