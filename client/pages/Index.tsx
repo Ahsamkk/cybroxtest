@@ -357,7 +357,7 @@ export default function Index() {
         href={`https://wa.me/03113313859?text=${encodeURIComponent("Hello! I want to know more.")}`}
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-5 right-5 bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
+        className="fixed bottom-5 right-5 z-[99] bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
