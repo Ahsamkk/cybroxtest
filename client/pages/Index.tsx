@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Code, Smartphone, Palette, Zap, Users, Star, CheckCircle, Globe, Rocket, Eye, Monitor, Database, Shield } from "lucide-react";
+import { ArrowRight, Code, Smartphone, Palette, Zap, Users, Star, CheckCircle, Globe, Rocket, Eye, Monitor, Database, Shield, ChartColumnIncreasing } from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Link } from 'react-router-dom';
 
@@ -240,9 +240,9 @@ export default function Index() {
                     description: "Skilled professionals with years of industry experience"
                   },
                   {
-                    icon: Globe,
-                    title: "Global Reach",
-                    description: "Serving clients worldwide with 24/7 support"
+                    icon: ChartColumnIncreasing,
+                    title: "Value Added",
+                    description: "Securing your digital future"
                   }
                 ].map((feature, index) => (
                   <div key={index} className="flex items-start gap-4">
