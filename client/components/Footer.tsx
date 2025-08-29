@@ -74,7 +74,7 @@ export function Footer() {
             <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Contact</h4>
             <ul className="space-y-2 sm:space-y-3 text-muted-foreground">
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base break-all">Infocybroxs@gmail.com</li>
-              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">03113313859</li>
+              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">03278423909</li>
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">E7/12, jahangir road karachi, 74800</li>
             </ul>
           </div>
