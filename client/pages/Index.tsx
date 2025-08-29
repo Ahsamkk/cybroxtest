@@ -354,7 +354,7 @@ export default function Index() {
       </section>
 
       <a
-        href={`https://wa.me/03113313859?text=${encodeURIComponent("Hello! I want to know more.")}`}
+        href={`https://wa.me/03278423909?text=${encodeURIComponent("Hello! I want to know more.")}`}
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-5 right-5 z-[99] bg-green-500 p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors"
