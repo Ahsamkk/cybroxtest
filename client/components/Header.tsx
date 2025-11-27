@@ -29,7 +29,7 @@ export function Header() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6 lg:space-x-8">
-          <Link to="/" className="hover:text-primary transition-colors text-sm lg:text-base">Home</Link>
+          <Link to="/" className="hover:text-primary transition-colors text-sm lg:text-base">Homed</Link>
           <div className="relative group">
             <span className="hover:text-primary transition-colors text-sm lg:text-base cursor-pointer">Services</span>
             <div className="absolute top-full left-0 mt-2 w-64 bg-card border border-border rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 z-50">
