@@ -81,10 +81,11 @@ export default function Index() {
               <span className="text-primary text-xs sm:text-sm font-medium">Digital Agency</span>
             </div> */}
 
-            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 leading-tight">
-              <span className="block text-foreground">Where Security </span>
-              <span className="block bg-gradient-to-r from-primary to-red-400 bg-clip-text text-transparent">
-                Meets Innovation
+            <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold pb-4 mb-4 sm:mb-6 leading-tight">
+              <span className="block text-foreground">Secure Path To </span>
+              {/* <span className="block bg-gradient-to-r from-primary to-red-400 bg-clip-text text-transparent"> */}
+              <span className="block text-red-400">
+                Digital Growth
               </span>
             </h1>
 
