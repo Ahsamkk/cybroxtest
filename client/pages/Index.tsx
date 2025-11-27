@@ -174,9 +174,9 @@ export default function Index() {
               },
               {
                 icon: Eye,
-                title: "Graphic Design",
-                description: "Visual content that communicates your message and engages your target audience",
-                features: ["Marketing Materials", "UI/UX Design", "Print Design", "Digital Assets"],
+                title: "Digital Transformation",
+                description: "Transforming your business through innovative digital solutions that engages your audience.",
+                features: ["Iron Manager", "Stock Byte", "Linkfy", "EPoint"],
                 color: "from-orange-500 to-red-500",
                 link: "/graphic-design"
               }

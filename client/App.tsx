@@ -15,6 +15,7 @@ import CyberSecurity from "./pages/CyberSecurity";
 import AppDevelopment from "./pages/AppDevelopment";
 import WebDevelopment from "./pages/WebDevelopment";
 import GraphicDesign from "./pages/GraphicDesign";
+import DigitalTransformation from "./pages/DigitalTransformation"
 import NotFound from "./pages/NotFound";
 import { ScrollTop } from "./components/ScrollTop";
 
@@ -33,7 +34,7 @@ const App = () => (
             <Route path="/cyber-security" element={<CyberSecurity />} />
             <Route path="/app-development" element={<AppDevelopment />} />
             <Route path="/web-development" element={<WebDevelopment />} />
-            <Route path="/graphic-design" element={<GraphicDesign />} />
+            <Route path="/digital-transformation" element={<DigitalTransformation />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
