@@ -178,7 +178,7 @@ export default function Index() {
                 description: "Transforming your business through innovative digital solutions that engages your audience.",
                 features: ["Iron Manager", "Stock Byte", "Linkfy", "EPoint"],
                 color: "from-orange-500 to-red-500",
-                link: "/graphic-design"
+                link: "/digital-transformation"
               }
             ].map((service, index) => (
               <Card key={index} className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-3 bg-background border-border relative overflow-hidden">

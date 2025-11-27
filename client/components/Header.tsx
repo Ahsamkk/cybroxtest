@@ -43,8 +43,8 @@ export function Header() {
                 <Link to="/web-development" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
                   Web Development
                 </Link>
-                <Link to="/graphic-design" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
-                  Graphic Design
+                <Link to="/digital-transformation" className="block px-4 py-2 text-sm hover:bg-primary/10 hover:text-primary rounded transition-colors">
+                  Digital Transformation
                 </Link>
               </div>
             </div>
