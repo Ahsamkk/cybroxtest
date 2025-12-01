@@ -82,20 +82,20 @@ export default function DigitalTransformation() {
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
-              <span className="block text-foreground">Visual Stories</span>
+              <span className="block text-foreground">Digital Solutions</span>
               <span className="block bg-gradient-to-r from-primary to-purple-400 bg-clip-text text-transparent">
-                That Inspire
+                That Transform
               </span>
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Creative visual solutions that communicate your message powerfully, engage your audience, and elevate your brand identity across all platforms and media.
+              Upgrade your organization with powerful mobile and web-based applications built to automate workflows, streamline operations, and unlock real-time insights. Cybrox helps businesses move from manual processes to complete digital ecosystems — fast, secure, and scalable.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link to="/contact">
                 <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 group">
-                  Start Your Design Project
+                  Start Your Digital Transformation
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
@@ -108,9 +108,9 @@ export default function DigitalTransformation() {
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
         <div className="container mx-auto max-w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Our Design Services</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Our Digital Transformation Solutions</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Comprehensive visual communication solutions for every need
+              End-to-end strategies that drive innovation and optimize your digital future.
             </p>
           </div>
 
@@ -118,16 +118,16 @@ export default function DigitalTransformation() {
             {[
               {
                 icon: Brush,
-                title: "Marketing Materials",
-                description: "Eye-catching designs for brochures, flyers, banners, and promotional content",
-                features: ["Print Design", "Digital Banners", "Social Media Graphics", "Brochures & Flyers"],
+                title: "Iron Manager",
+                description: "A smart, lightweight mobile app for gym owners to manage members, fees, attendance, and daily operations — all automatically.",
+                features: ["Automated Fee Reminders", "Member & Attendance Tracking", "Real-time Business Analytics", "Streamlined Daily Operations"],
                 color: "from-orange-500 to-red-500"
               },
               {
                 icon: Eye,
-                title: "UI/UX Design",
-                description: "User-centered design for websites and applications that convert",
-                features: ["User Research", "Wireframing", "Prototyping", "Visual Design"],
+                title: "StockBite",
+                description: "A complete digital solution for laptop shops and vendors to track inventory, expenses, and sales",
+                features: ["Laptop stock & inventory management", "Expense & sales tracking", "Business insights & reports", "Smooth, error-free operations"],
                 color: "from-orange-500 to-red-500"
               },
               {

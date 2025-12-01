@@ -9,7 +9,7 @@ export function Header() {
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
-    setIsMobileServicesOpen(false); // Close services menu when main menu toggles
+    setIsMobileServicesOpen(false); 
   };
 
   const toggleMobileServices = () => {
