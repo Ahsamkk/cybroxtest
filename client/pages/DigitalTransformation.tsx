@@ -39,7 +39,6 @@ export default function DigitalTransformation() {
 
   return (
     <div className="w-full">
-      {/* Hero Section */}
       <section className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden w-full pt-28 sm:pt-32">
         <div
           className="absolute inset-0 z-0 w-full h-full"
@@ -126,22 +125,22 @@ export default function DigitalTransformation() {
               {
                 icon: Eye,
                 title: "StockBite",
-                description: "A complete digital solution for laptop shops and vendors to track inventory, expenses, and sales",
+                description: "A complete digital solution for laptop shops and vendors to track inventory, expenses, and sales.",
                 features: ["Laptop stock & inventory management", "Expense & sales tracking", "Business insights & reports", "Smooth, error-free operations"],
                 color: "from-orange-500 to-red-500"
               },
               {
                 icon: Image,
-                title: "Logo Design",
-                description: "Unique and memorable logos that represent your brand’s identity",
-                features: ["Brand Marks & Wordmarks", "Minimalist & Modern Logos", "Custom Iconography", "Brand Cohesion"],
+                title: "Epoint",
+                description: "A smart, cross-platform school management solution to manage student attendance, fees, staff, and daily academic operations — all in one system.",
+                features: ["Student & staff attendance tracking", "Automated fee challans & reminders", "Academic & administrative management", "Reports & school insights"],
                 color: "from-orange-500 to-red-500"
               },
               {
                 icon: Sparkles,
-                title: "Digital Assets",
-                description: "Digital graphics for websites, social media, and online marketing",
-                features: ["Social Media Kits", "Email Templates", "Web Graphics", "Digital Illustrations"],
+                title: "Linkfy",
+                description: "A complete ISP management solution to manage customers, billing, complaints, and network operations efficiently and accurately.",
+                features: ["Customer & connection management", "Automated billing & expiry reminders", "New connections & service requests", "Complaint & support management"],
                 color: "from-orange-500 to-red-500"
               }
             ].map((service, index) => (
@@ -274,7 +273,7 @@ export default function DigitalTransformation() {
           <div className="text-center mb-16">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6">Why Choose Cybrox</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Expertise across multiple design disciplines and industries
+              Expertise in digital transformation and cybersecurity—built for speed, scale, and security
             </p>
           </div>
 
@@ -282,33 +281,33 @@ export default function DigitalTransformation() {
             {[
               {
                 icon: Palette,
-                title: "Brand Identity",
-                description: "Complete brand systems including logos, colors, and guidelines"
+                title: "Digital Transformation Experts",
+                description: "We help businesses modernize their operations with scalable, user-friendly digital solutions that drive efficiency and growth."
               },
               {
                 icon: Image,
-                title: "Digital Marketing",
-                description: "Social media graphics, web banners, and digital advertisements"
+                title: "Security by Design",
+                description: "Cybersecurity is built into everything we create—from applications to infrastructure—protecting your business from modern cyber threats."
               },
               {
                 icon: Brush,
-                title: "Print Materials",
-                description: "Business cards, brochures, posters, and packaging design"
+                title: "Custom Web & App Development",
+                description: "High-performance websites and mobile apps designed for usability, speed, and seamless user experience across all platforms."
               },
               {
                 icon: Eye,
-                title: "User Interface",
-                description: "Clean, intuitive interfaces for web and mobile applications"
+                title: "End-to-End Solutions",
+                description: "From ideation and design to development, deployment, and security compliance—we handle the complete digital lifecycle."
               },
               {
                 icon: Layers,
-                title: "Illustration",
-                description: "Custom illustrations and iconography for various purposes"
+                title: "Trusted Across Industries",
+                description: "Serving startups, SMEs, and enterprises with tailored solutions that align with business goals and industry requirements."
               },
               {
                 icon: Sparkles,
-                title: "Motion Graphics",
-                description: "Animated graphics and visual effects for digital media"
+                title: "Innovation with Reliability",
+                description: "We combine modern technologies, best practices, and proven frameworks to deliver secure, future-ready digital products."
               }
             ].map((specialty, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -392,7 +391,7 @@ export default function DigitalTransformation() {
       </section> */}
 
       {/* CTA Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/10 to-purple-500/10 opacity-0 w-full" ref={addToRefs}>
+      {/* <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-primary/10 to-purple-500/10 opacity-0 w-full" ref={addToRefs}>
         <div className="container mx-auto text-center max-w-full">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-4xl sm:text-5xl font-bold mb-6 leading-tight">
@@ -411,15 +410,10 @@ export default function DigitalTransformation() {
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </Link>
-              {/* <Link to="/contact">
-                <Button size="lg" variant="outline" className="text-lg px-12 py-6 border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                  View Full Portfolio
-                </Button>
-              </Link> */}
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 }

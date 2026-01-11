@@ -38,7 +38,7 @@ export default function Index() {
   };
 
   return (
-    <div className="w-full">{/* Content wrapper without min-h-screen since Layout handles that */}
+    <div className="w-full">
 
       {/* Hero Section */}
      <section id="home" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden w-full pt-28 sm:pt-32">
