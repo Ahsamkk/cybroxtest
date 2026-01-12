@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Palette, Eye, Layers, Zap, CheckCircle, ArrowRight, Image, Brush, Sparkles } from "lucide-react";
+import { Palette, Eye, Layers, Link2, CheckCircle, ArrowRight, Brush, Image, Warehouse, Sparkles, Dumbbell, School} from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -116,28 +116,28 @@ export default function DigitalTransformation() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                icon: Brush,
+                icon: Dumbbell,
                 title: "Iron Manager",
                 description: "A smart, lightweight mobile app for gym owners to manage members, fees, attendance, and daily operations — all automatically.",
                 features: ["Automated Fee Reminders", "Member & Attendance Tracking", "Real-time Business Analytics", "Streamlined Daily Operations"],
                 color: "from-orange-500 to-red-500"
               },
               {
-                icon: Eye,
+                icon: Warehouse,
                 title: "StockBite",
                 description: "A complete digital solution for laptop shops and vendors to track inventory, expenses, and sales.",
                 features: ["Laptop stock & inventory management", "Expense & sales tracking", "Business insights & reports", "Smooth, error-free operations"],
                 color: "from-orange-500 to-red-500"
               },
               {
-                icon: Image,
+                icon: School,
                 title: "Epoint",
                 description: "A smart, cross-platform school management solution to manage student attendance, fees, staff, and daily academic operations — all in one system.",
                 features: ["Student & staff attendance tracking", "Automated fee challans & reminders", "Academic & administrative management", "Reports & school insights"],
                 color: "from-orange-500 to-red-500"
               },
               {
-                icon: Sparkles,
+                icon: Link2,
                 title: "Linkfy",
                 description: "A complete ISP management solution to manage customers, billing, complaints, and network operations efficiently and accurately.",
                 features: ["Customer & connection management", "Automated billing & expiry reminders", "New connections & service requests", "Complaint & support management"],
