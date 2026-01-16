@@ -107,7 +107,7 @@ export function Footer() {
             </h4>
             <ul className="space-y-2 sm:space-y-3 text-muted-foreground">
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">
-                03148197060{" "}
+                +923148197060{" "}
               </li>
               <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">
                 E7/12, Jahangir Road Karachi, 74800

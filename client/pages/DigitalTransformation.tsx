@@ -147,7 +147,7 @@ export default function DigitalTransformation() {
                 icon: Dumbbell,
                 title: "Iron Manager",
                 description:
-                  "A smart, lightweight mobile app for gym owners to manage members, fees, attendance, and daily operations — all automatically.",
+                  "A smart, lightweight mobile app for gym owners to manage members, fees, attendance, and daily operations.",
                 features: [
                   "Automated Fee Reminders",
                   "Member & Attendance Tracking",
@@ -173,7 +173,7 @@ export default function DigitalTransformation() {
                 icon: School,
                 title: "Epoint",
                 description:
-                  "A smart, cross-platform school management solution to manage student attendance, fees, staff, and daily academic operations — all in one system.",
+                  "A smart, cross-platform school management solution to manage student attendance, fees, staff, and daily academic operations.",
                 features: [
                   "Student & staff attendance tracking",
                   "Automated fee challans & reminders",
