@@ -1,6 +1,19 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Palette, Eye, Layers, Link2, CheckCircle, ArrowRight, Brush, Image, Warehouse, Sparkles, Dumbbell, School} from "lucide-react";
+import {
+  Palette,
+  Eye,
+  Layers,
+  Link2,
+  CheckCircle,
+  ArrowRight,
+  Brush,
+  Image,
+  Warehouse,
+  Sparkles,
+  Dumbbell,
+  School,
+} from "lucide-react";
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 
@@ -12,12 +25,12 @@ export default function DigitalTransformation() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in-up');
-            entry.target.classList.remove('opacity-0');
+            entry.target.classList.add("animate-fade-in-up");
+            entry.target.classList.remove("opacity-0");
           }
         });
       },
-      { threshold: 0.1, rootMargin: '0px 0px -50px 0px' }
+      { threshold: 0.1, rootMargin: "0px 0px -50px 0px" },
     );
 
     sectionRefs.current.forEach((ref) => {
@@ -44,14 +57,14 @@ export default function DigitalTransformation() {
           className="absolute inset-0 z-0 w-full h-full"
           style={{
             backgroundImage: `url('https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg')`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat'
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
           }}
         >
           <div className="absolute inset-0 bg-background/85"></div>
         </div>
-        
+
         {/* Animated Design Elements */}
         <div className="absolute inset-0 z-10">
           <div className="absolute top-1/4 left-20 w-4 h-4 bg-primary rounded-full animate-move-up-down"></div>
@@ -77,7 +90,9 @@ export default function DigitalTransformation() {
           <div className="animate-fade-in-up px-4 sm:px-6 lg:px-8">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-8">
               <Palette className="w-4 h-4 text-primary animate-pulse" />
-              <span className="text-primary text-sm font-medium">Digital Transformation</span>
+              <span className="text-primary text-sm font-medium">
+                Digital Transformation
+              </span>
             </div>
 
             <h1 className="text-4xl sm:text-5xl md:text-7xl font-bold mb-6 leading-tight">
@@ -88,12 +103,19 @@ export default function DigitalTransformation() {
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-              Upgrade your organization with powerful mobile and web-based applications built to automate workflows, streamline operations, and unlock real-time insights. Cybrox helps businesses move from manual processes to complete digital ecosystems — fast, secure, and scalable.
+              Upgrade your organization with powerful mobile and web-based
+              applications built to automate workflows, streamline operations,
+              and unlock real-time insights. Cybrox helps businesses move from
+              manual processes to complete digital ecosystems — fast, secure,
+              and scalable.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Link to="/contact">
-                <Button size="lg" className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 group">
+                <Button
+                  size="lg"
+                  className="bg-primary hover:bg-primary/90 text-lg px-8 py-6 group"
+                >
                   Start Your Digital Transformation
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
@@ -104,12 +126,18 @@ export default function DigitalTransformation() {
       </section>
 
       {/* Design Services Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
+      <section
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full"
+        ref={addToRefs}
+      >
         <div className="container mx-auto max-w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Our Digital Transformation Solutions</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Our Digital Transformation Solutions
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              End-to-end strategies that drive innovation and optimize your digital future.
+              End-to-end strategies that drive innovation and optimize your
+              digital future.
             </p>
           </div>
 
@@ -118,34 +146,63 @@ export default function DigitalTransformation() {
               {
                 icon: Dumbbell,
                 title: "Iron Manager",
-                description: "A smart, lightweight mobile app for gym owners to manage members, fees, attendance, and daily operations — all automatically.",
-                features: ["Automated Fee Reminders", "Member & Attendance Tracking", "Real-time Business Analytics", "Streamlined Daily Operations"],
-                color: "from-orange-500 to-red-500"
+                description:
+                  "A smart, lightweight mobile app for gym owners to manage members, fees, attendance, and daily operations — all automatically.",
+                features: [
+                  "Automated Fee Reminders",
+                  "Member & Attendance Tracking",
+                  "Real-time Business Analytics",
+                  "Streamlined Daily Operations",
+                ],
+                color: "from-orange-500 to-red-500",
               },
               {
                 icon: Warehouse,
-                title: "StockBite",
-                description: "A complete digital solution for laptop shops and vendors to track inventory, expenses, and sales.",
-                features: ["Laptop stock & inventory management", "Expense & sales tracking", "Business insights & reports", "Smooth, error-free operations"],
-                color: "from-orange-500 to-red-500"
+                title: "Stock Byte",
+                description:
+                  "A complete digital solution for laptop shops and vendors to track inventory, expenses, and sales.",
+                features: [
+                  "Laptop stock & inventory management",
+                  "Expense & sales tracking",
+                  "Business insights & reports",
+                  "Smooth, error-free operations",
+                ],
+                color: "from-orange-500 to-red-500",
               },
               {
                 icon: School,
                 title: "Epoint",
-                description: "A smart, cross-platform school management solution to manage student attendance, fees, staff, and daily academic operations — all in one system.",
-                features: ["Student & staff attendance tracking", "Automated fee challans & reminders", "Academic & administrative management", "Reports & school insights"],
-                color: "from-orange-500 to-red-500"
+                description:
+                  "A smart, cross-platform school management solution to manage student attendance, fees, staff, and daily academic operations — all in one system.",
+                features: [
+                  "Student & staff attendance tracking",
+                  "Automated fee challans & reminders",
+                  "Academic & administrative management",
+                  "Reports & school insights",
+                ],
+                color: "from-orange-500 to-red-500",
               },
               {
                 icon: Link2,
                 title: "Linkfy",
-                description: "A complete ISP management solution to manage customers, billing, complaints, and network operations efficiently and accurately.",
-                features: ["Customer & connection management", "Automated billing & expiry reminders", "New connections & service requests", "Complaint & support management"],
-                color: "from-orange-500 to-red-500"
-              }
+                description:
+                  "A complete ISP management solution to manage customers, billing, complaints, and network operations efficiently and accurately.",
+                features: [
+                  "Customer & connection management",
+                  "Automated billing & expiry reminders",
+                  "New connections & service requests",
+                  "Complaint & support management",
+                ],
+                color: "from-orange-500 to-red-500",
+              },
             ].map((service, index) => (
-              <Card key={index} className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-2 bg-background border-border relative overflow-hidden">
-                <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}></div>
+              <Card
+                key={index}
+                className="group hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:-translate-y-2 bg-background border-border relative overflow-hidden"
+              >
+                <div
+                  className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-10 transition-opacity duration-500`}
+                ></div>
                 <CardContent className="p-8 relative z-10">
                   <div className="mb-6">
                     <div className="inline-flex p-4 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300">
@@ -174,52 +231,65 @@ export default function DigitalTransformation() {
       </section>
 
       {/* Design Process */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 opacity-0 w-full" ref={addToRefs}>
+      <section
+        className="py-20 px-4 sm:px-6 lg:px-8 opacity-0 w-full"
+        ref={addToRefs}
+      >
         <div className="container mx-auto max-w-full">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-4 py-2 mb-6">
                 <Layers className="w-4 h-4 text-primary" />
-                <span className="text-primary text-sm font-medium">Design Process</span>
+                <span className="text-primary text-sm font-medium">
+                  Design Process
+                </span>
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">
                 From Concept to Creation
               </h2>
               <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
-                Our structured design process ensures every visual element serves your brand's purpose and connects with your audience.
+                Our structured design process ensures every visual element
+                serves your brand's purpose and connects with your audience.
               </p>
-              
+
               <div className="space-y-6">
                 {[
                   {
                     icon: Eye,
                     title: "Discovery & Research",
-                    description: "Understanding your brand, audience, and design requirements"
+                    description:
+                      "Understanding your brand, audience, and design requirements",
                   },
                   {
                     icon: Brush,
                     title: "Concept Development",
-                    description: "Creating initial concepts and exploring creative directions"
+                    description:
+                      "Creating initial concepts and exploring creative directions",
                   },
                   {
                     icon: Sparkles,
                     title: "Design & Refinement",
-                    description: "Crafting final designs with attention to every detail"
-                  }
+                    description:
+                      "Crafting final designs with attention to every detail",
+                  },
                 ].map((step, index) => (
                   <div key={index} className="flex items-start gap-4">
                     <div className="p-3 rounded-lg bg-primary/10 text-primary">
                       <step.icon className="w-6 h-6" />
                     </div>
                     <div>
-                      <h4 className="text-lg font-semibold mb-2">{step.title}</h4>
-                      <p className="text-muted-foreground">{step.description}</p>
+                      <h4 className="text-lg font-semibold mb-2">
+                        {step.title}
+                      </h4>
+                      <p className="text-muted-foreground">
+                        {step.description}
+                      </p>
                     </div>
                   </div>
                 ))}
               </div>
             </div>
-            
+
             {/* Design Visual */}
             <div className="relative">
               <div className="aspect-square bg-gradient-to-br from-primary/20 to-purple-500/20 rounded-3xl p-8 relative overflow-hidden">
@@ -236,7 +306,7 @@ export default function DigitalTransformation() {
                 <div className="absolute bottom-8 right-8 w-16 h-16 bg-card rounded-xl border border-border animate-float-slow flex items-center justify-center">
                   <Layers className="w-6 h-6 text-primary" />
                 </div> */}
-                
+
                 {/* Central Design Canvas */}
                 <div className="w-full h-full bg-card rounded-2xl flex items-center justify-center relative overflow-hidden">
                   <div className="text-center z-10">
@@ -244,16 +314,24 @@ export default function DigitalTransformation() {
                       <Sparkles className="w-12 h-12 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold mb-2">Creative Vision</h3>
-                    <p className="text-muted-foreground">Bringing ideas to life</p>
+                    <p className="text-muted-foreground">
+                      Bringing ideas to life
+                    </p>
                   </div>
-                  
+
                   {/* Color Swatches */}
                   <div className="absolute top-4 left-4 flex gap-1">
                     <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
-                    <div className="w-3 h-3 bg-purple-500 rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                    <div className="w-3 h-3 bg-pink-500 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+                    <div
+                      className="w-3 h-3 bg-purple-500 rounded-full animate-pulse"
+                      style={{ animationDelay: "0.5s" }}
+                    ></div>
+                    <div
+                      className="w-3 h-3 bg-pink-500 rounded-full animate-pulse"
+                      style={{ animationDelay: "1s" }}
+                    ></div>
                   </div>
-                  
+
                   {/* Design Elements */}
                   <div className="absolute bottom-4 right-4 space-y-1">
                     <div className="w-8 h-1 bg-primary/30 rounded"></div>
@@ -268,12 +346,18 @@ export default function DigitalTransformation() {
       </section>
 
       {/* Design Specialties */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full" ref={addToRefs}>
+      <section
+        className="py-20 px-4 sm:px-6 lg:px-8 bg-card/30 opacity-0 w-full"
+        ref={addToRefs}
+      >
         <div className="container mx-auto max-w-full">
           <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold mb-6">Why Choose Cybrox</h2>
+            <h2 className="text-4xl sm:text-5xl font-bold mb-6">
+              Why Choose Cybrox
+            </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Expertise in digital transformation and cybersecurity—built for speed, scale, and security
+              Expertise in digital transformation and cybersecurity—built for
+              speed, scale, and security
             </p>
           </div>
 
@@ -282,41 +366,54 @@ export default function DigitalTransformation() {
               {
                 icon: Palette,
                 title: "Digital Transformation Experts",
-                description: "We help businesses modernize their operations with scalable, user-friendly digital solutions that drive efficiency and growth."
+                description:
+                  "We help businesses modernize their operations with scalable, user-friendly digital solutions that drive efficiency and growth.",
               },
               {
                 icon: Image,
                 title: "Security by Design",
-                description: "Cybersecurity is built into everything we create—from applications to infrastructure—protecting your business from modern cyber threats."
+                description:
+                  "Cybersecurity is built into everything we create—from applications to infrastructure—protecting your business from modern cyber threats.",
               },
               {
                 icon: Brush,
                 title: "Custom Web & App Development",
-                description: "High-performance websites and mobile apps designed for usability, speed, and seamless user experience across all platforms."
+                description:
+                  "High-performance websites and mobile apps designed for usability, speed, and seamless user experience across all platforms.",
               },
               {
                 icon: Eye,
                 title: "End-to-End Solutions",
-                description: "From ideation and design to development, deployment, and security compliance—we handle the complete digital lifecycle."
+                description:
+                  "From ideation and design to development, deployment, and security compliance—we handle the complete digital lifecycle.",
               },
               {
                 icon: Layers,
                 title: "Trusted Across Industries",
-                description: "Serving startups, SMEs, and enterprises with tailored solutions that align with business goals and industry requirements."
+                description:
+                  "Serving startups, SMEs, and enterprises with tailored solutions that align with business goals and industry requirements.",
               },
               {
                 icon: Sparkles,
                 title: "Innovation with Reliability",
-                description: "We combine modern technologies, best practices, and proven frameworks to deliver secure, future-ready digital products."
-              }
+                description:
+                  "We combine modern technologies, best practices, and proven frameworks to deliver secure, future-ready digital products.",
+              },
             ].map((specialty, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <Card
+                key={index}
+                className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+              >
                 <CardContent className="p-6 text-center">
                   <div className="inline-flex p-3 rounded-xl bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-all duration-300 mb-4">
                     <specialty.icon className="h-6 w-6" />
                   </div>
-                  <h3 className="text-lg font-semibold mb-2">{specialty.title}</h3>
-                  <p className="text-muted-foreground text-sm">{specialty.description}</p>
+                  <h3 className="text-lg font-semibold mb-2">
+                    {specialty.title}
+                  </h3>
+                  <p className="text-muted-foreground text-sm">
+                    {specialty.description}
+                  </p>
                 </CardContent>
               </Card>
             ))}

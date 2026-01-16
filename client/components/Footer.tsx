@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export function Footer() {
   return (
@@ -12,7 +12,8 @@ export function Footer() {
               </div>
             </div>
             <p className="text-muted-foreground max-w-md mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
-              Transforming ideas into digital reality through innovative design and development solutions that drive growth.
+              Transforming ideas into digital reality through innovative design
+              and development solutions that drive growth.
             </p>
             <div className="flex space-x-3 sm:space-x-4">
               <a
@@ -28,8 +29,9 @@ export function Footer() {
                       viewBox="0 0 24 24"
                       className="w-4 h-4 sm:w-5 sm:h-5"
                     >
-                    <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25-.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0z"/>
-                  </svg></span>
+                      <path d="M7.75 2h8.5A5.75 5.75 0 0 1 22 7.75v8.5A5.75 5.75 0 0 1 16.25 22h-8.5A5.75 5.75 0 0 1 2 16.25v-8.5A5.75 5.75 0 0 1 7.75 2zm0 1.5A4.25 4.25 0 0 0 3.5 7.75v8.5A4.25 4.25 0 0 0 7.75 20.5h8.5a4.25 4.25 0 0 0 4.25-4.25v-8.5A4.25 4.25 0 0 0 16.25 3.5h-8.5zm4.25 3a5.25 5.25 0 1 1 0 10.5 5.25 5.25 0 0 1 0-10.5zm0 1.5a3.75 3.75 0 1 0 0 7.5 3.75 3.75 0 0 0 0-7.5zm5.25-.25a.75.75 0 1 1 1.5 0 .75.75 0 0 1-1.5 0z" />
+                    </svg>
+                  </span>
                 </div>
               </a>
 
@@ -54,27 +56,62 @@ export function Footer() {
                     viewBox="0 0 24 24"
                     className="w-4 h-4 sm:w-5 sm:h-5"
                   >
-                    <path d="M12 13.065L1.5 6.75V18a2.25 2.25 0 0 0 2.25 2.25h16.5A2.25 2.25 0 0 0 22.5 18V6.75l-10.5 6.315zM12 10.935l10.5-6.435H1.5L12 10.935z"/>
+                    <path d="M12 13.065L1.5 6.75V18a2.25 2.25 0 0 0 2.25 2.25h16.5A2.25 2.25 0 0 0 22.5 18V6.75l-10.5 6.315zM12 10.935l10.5-6.435H1.5L12 10.935z" />
                   </svg>
                 </div>
               </a>
             </div>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Services</h4>
+            <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">
+              Services
+            </h4>
             <ul className="space-y-2 sm:space-y-3 text-muted-foreground">
-              <li><Link to="cyber-security" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Cyber Security Services</Link></li>
-              <li><Link to="app-development" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">App Development</Link></li>
-              <li><Link to="web-development" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Web Development</Link></li> 
-              <li><Link to="digital-transformation" className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">Digital Transformation</Link></li>
-              
+              <li>
+                <Link
+                  to="cyber-security"
+                  className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base"
+                >
+                  Cyber Security Services
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="app-development"
+                  className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base"
+                >
+                  App Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="web-development"
+                  className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base"
+                >
+                  Web Development
+                </Link>
+              </li>
+              <li>
+                <Link
+                  to="digital-transformation"
+                  className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base"
+                >
+                  Digital Transformation
+                </Link>
+              </li>
             </ul>
           </div>
           <div>
-            <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">Contact</h4>
+            <h4 className="font-semibold mb-4 sm:mb-6 text-base sm:text-lg">
+              Contact
+            </h4>
             <ul className="space-y-2 sm:space-y-3 text-muted-foreground">
-              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">03148197060</li>
-              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">E7/12, jahangir road karachi, 74800</li>
+              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">
+                03148197060{" "}
+              </li>
+              <li className="hover:text-primary cursor-pointer transition-colors text-sm sm:text-base">
+                E7/12, Jahangir Road Karachi, 74800
+              </li>
             </ul>
           </div>
         </div>
@@ -83,9 +120,15 @@ export function Footer() {
             © 2025 Cybrox. All rights reserved.
           </div>
           <div className="flex flex-wrap justify-center space-x-4 sm:space-x-6 text-xs sm:text-sm text-muted-foreground">
-            <span className="hover:text-primary cursor-pointer transition-colors">Privacy Policy</span>
-            <span className="hover:text-primary cursor-pointer transition-colors">Terms of Service</span>
-            <span className="hover:text-primary cursor-pointer transition-colors">Cookie Policy</span>
+            <span className="hover:text-primary cursor-pointer transition-colors">
+              Privacy Policy
+            </span>
+            <span className="hover:text-primary cursor-pointer transition-colors">
+              Terms of Service
+            </span>
+            <span className="hover:text-primary cursor-pointer transition-colors">
+              Cookie Policy
+            </span>
           </div>
         </div>
       </div>
