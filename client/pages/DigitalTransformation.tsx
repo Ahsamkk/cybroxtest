@@ -158,14 +158,14 @@ export default function DigitalTransformation() {
               },
               {
                 icon: Warehouse,
-                title: "Stock Byte",
+                title: "B-Connect",
                 description:
-                  "A complete digital solution for laptop shops and vendors to track inventory, expenses, and sales.",
+                  "A complete digital solution for banquet halls and event venues to manage bookings, clients, payments, and daily operations.",
                 features: [
-                  "Laptop stock & inventory management",
-                  "Expense & sales tracking",
+                  "Banquet booking & event management",
+                  "Client, payment & expense tracking",
                   "Business insights & reports",
-                  "Smooth, error-free operations",
+                  "Smooth, hassle-free operations",
                 ],
                 color: "from-orange-500 to-red-500",
               },
