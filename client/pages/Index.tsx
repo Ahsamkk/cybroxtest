@@ -200,7 +200,7 @@ export default function Index() {
                 title: "Digital Transformation",
                 description:
                   "Transforming your business through innovative digital solutions that engages your audience.",
-                features: ["Iron Manager", "Stock Byte", "Linkfy", "EPoint"],
+                features: ["Iron Manager", "Bconnect", "Linkfy", "EPoint"],
                 color: "from-orange-500 to-red-500",
                 link: "/digital-transformation",
               },
