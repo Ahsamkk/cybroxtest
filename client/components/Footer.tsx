@@ -117,7 +117,7 @@ export function Footer() {
         </div>
         <div className="border-t border-border pt-6 sm:pt-8 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="text-muted-foreground text-sm sm:text-base text-center md:text-left">
-            © 2025 Cybrox. All rights reserved.
+            © {new Date().getFullYear()} Cybrox. All rights reserved.
           </div>
           <div className="flex flex-wrap justify-center space-x-4 sm:space-x-6 text-xs sm:text-sm text-muted-foreground">
             <span className="hover:text-primary cursor-pointer transition-colors">
