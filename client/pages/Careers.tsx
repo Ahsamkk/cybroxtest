@@ -2,13 +2,6 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Briefcase, FileUp, Send, UploadCloud, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 
@@ -57,7 +50,7 @@ export default function Careers() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Application submitted:", formData, resume);
-    alert("Thank you for applying! We'll review your application and get back to you soon.");
+    alert("Successfully submitted!");
     setFormData({ name: "", email: "", phone: "", position: "" });
     setResume(null);
     if (fileInputRef.current) fileInputRef.current.value = "";
@@ -94,7 +87,7 @@ export default function Careers() {
         className="pt-28 sm:pt-32 lg:pt-36 pb-12 sm:pb-16 lg:pb-20 px-4 sm:px-6 lg:px-8 w-full opacity-0"
         ref={addToRefs}
       >
-        <div className="container mx-auto max-w-4xl">
+        <div className="container mx-auto max-w-2xl">
           <div className="text-center mb-12">
             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/30 rounded-full px-3 sm:px-4 py-2 mb-4 sm:mb-6">
               <Briefcase className="w-3 h-3 sm:w-4 sm:h-4 text-primary" />
@@ -155,42 +148,21 @@ export default function Careers() {
                       value={formData.phone}
                       onChange={handleChange}
                       className="bg-background/50 border-border focus:border-primary"
-                      placeholder="+1 234 567 8900"
+                      placeholder="0300000000"
                     />
                   </div>
                   <div className="space-y-2">
                     <Label htmlFor="position">Position Applying For *</Label>
-                    <Select
+                    <Input
+                      id="position"
+                      name="position"
+                      type="text"
+                      required
                       value={formData.position}
-                      onValueChange={(value) =>
-                        setFormData({ ...formData, position: value })
-                      }
-                    >
-                      <SelectTrigger className="bg-background/50 border-border focus:border-primary">
-                        <SelectValue placeholder="Select a position" />
-                      </SelectTrigger>
-                      <SelectContent>
-                        <SelectItem value="cyber-security-analyst">
-                          Cyber Security Analyst
-                        </SelectItem>
-                        <SelectItem value="web-developer">
-                          Web Developer
-                        </SelectItem>
-                        <SelectItem value="app-developer">
-                          App Developer
-                        </SelectItem>
-                        <SelectItem value="graphic-designer">
-                          Graphic Designer
-                        </SelectItem>
-                        <SelectItem value="digital-marketing">
-                          Digital Marketing Specialist
-                        </SelectItem>
-                        <SelectItem value="business-development">
-                          Business Development
-                        </SelectItem>
-                        <SelectItem value="other">Other</SelectItem>
-                      </SelectContent>
-                    </Select>
+                      onChange={handleChange}
+                      className="bg-background/50 border-border focus:border-primary"
+                      placeholder="e.g. Web Developer"
+                    />
                   </div>
                 </div>
 
