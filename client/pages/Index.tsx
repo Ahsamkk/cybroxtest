@@ -59,7 +59,7 @@ export default function Index() {
       {/* Hero Section */}
       <section
         id="home"
-        className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden w-full pt-28 sm:pt-32"
+        className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8 overflow-hidden w-full pt-28 sm:pt-32 pb-12 sm:pb-16"
       >
         <div
           className="absolute inset-0 z-0 w-full h-full"
