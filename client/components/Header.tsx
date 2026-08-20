@@ -50,6 +50,7 @@ export function Header() {
             </div>
           </div>
           <a href="/#about" className="hover:text-primary transition-colors text-sm lg:text-base">About</a>
+          <Link to="/careers" className="hover:text-primary transition-colors text-sm lg:text-base">Careers</Link>
           <Link to="/contact" className="hover:text-primary transition-colors text-sm lg:text-base">Contact</Link>
         </div>
 
@@ -139,6 +140,14 @@ export function Header() {
             >
               About
             </a>
+
+            <Link
+              to="/careers"
+              className="block py-2 text-foreground hover:text-primary transition-colors"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              Careers
+            </Link>
 
             <Link
               to="/contact"
