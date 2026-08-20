@@ -206,7 +206,7 @@ export default function Index() {
               },
               {
                 icon: Smartphone,
-                title: "App Development",
+                title: "DApp Development",
                 description:
                   "Native and cross-platform mobile applications for iOS and Android platforms",
                 features: [
