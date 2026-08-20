@@ -295,9 +295,9 @@ export default function Index() {
                 className="flex items-center justify-center mx-6 sm:mx-10 shrink-0"
               >
                 <img
-                  src="/cybrox-icon.png"
+                  src={index % 2 === 0 ? "/comp1.png" : "/comp2.png"}
                   alt="Client company logo"
-                  className="h-12 sm:h-16 w-auto object-contain opacity-70 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+                  className="h-12 sm:h-16 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity duration-300"
                 />
               </div>
             ))}
