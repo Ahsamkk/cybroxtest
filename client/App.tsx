@@ -17,6 +17,8 @@ import WebDevelopment from "./pages/WebDevelopment";
 import GraphicDesign from "./pages/GraphicDesign";
 import DigitalTransformation from "./pages/DigitalTransformation"
 import Careers from "./pages/Careers";
+import Login from "./pages/Login";
+import Dashboard from "./pages/Dashboard";
 import NotFound from "./pages/NotFound";
 import { ScrollTop } from "./components/ScrollTop";
 
@@ -28,21 +30,30 @@ const App = () => (
     <TooltipProvider>
       <BrowserRouter>
       <ScrollTop />
-        <Layout>
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/cyber-security" element={<CyberSecurity />} />
-            <Route path="/app-development" element={<AppDevelopment />} />
-            <Route path="/web-development" element={<WebDevelopment />} />
-            <Route path="/digital-transformation" element={<DigitalTransformation />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/careers" element={<Careers />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </Layout>
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route
+            path="*"
+            element={
+              <Layout>
+                <Routes>
+                  <Route path="/" element={<Index />} />
+                  <Route path="/services" element={<Services />} />
+                  <Route path="/cyber-security" element={<CyberSecurity />} />
+                  <Route path="/app-development" element={<AppDevelopment />} />
+                  <Route path="/web-development" element={<WebDevelopment />} />
+                  <Route path="/digital-transformation" element={<DigitalTransformation />} />
+                  <Route path="/about" element={<About />} />
+                  <Route path="/contact" element={<Contact />} />
+                  <Route path="/careers" element={<Careers />} />
+                  {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </Layout>
+            }
+          />
+        </Routes>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
