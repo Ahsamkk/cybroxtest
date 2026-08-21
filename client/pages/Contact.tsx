@@ -18,6 +18,7 @@ export default function Contact() {
     service: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
 
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
@@ -54,12 +55,17 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus(null);
     try {
       await api.post("/api/contact", formData);
-      toast.success("Thank you for your message! We'll get back to you soon.");
+      const successMessage = "Thank you for your message! We'll get back to you soon.";
+      toast.success(successMessage);
+      setSubmitStatus({ type: "success", message: successMessage });
       setFormData({ name: "", email: "", company: "", message: "", service: "" });
     } catch (error) {
-      toast.error("Something went wrong sending your message. Please try again.");
+      const errorMessage = "Something went wrong sending your message. Please try again.";
+      toast.error(errorMessage);
+      setSubmitStatus({ type: "error", message: errorMessage });
     } finally {
       setIsSubmitting(false);
     }
@@ -158,6 +164,16 @@ export default function Contact() {
                         placeholder="Tell us about your project and how we can help..."
                       />
                     </div>
+
+                    {submitStatus && (
+                      <p
+                        className={`text-sm text-center ${
+                          submitStatus.type === "success" ? "text-green-500" : "text-destructive"
+                        }`}
+                      >
+                        {submitStatus.message}
+                      </p>
+                    )}
 
                     <Button
                       type="submit"

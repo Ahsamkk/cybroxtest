@@ -23,6 +23,7 @@ export default function Careers() {
   });
   const [resume, setResume] = useState<File | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{ type: "success" | "error"; message: string } | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
@@ -72,14 +73,19 @@ export default function Careers() {
     body.append("resume", resume);
 
     setIsSubmitting(true);
+    setSubmitStatus(null);
     try {
       await api.post("/api/careers", body);
-      toast.success("Successfully submitted!");
+      const successMessage = "Successfully submitted!";
+      toast.success(successMessage);
+      setSubmitStatus({ type: "success", message: successMessage });
       setFormData({ name: "", email: "", phone: "", position: "" });
       setResume(null);
       if (fileInputRef.current) fileInputRef.current.value = "";
     } catch (error) {
-      toast.error("Something went wrong submitting your application. Please try again.");
+      const errorMessage = "Something went wrong submitting your application. Please try again.";
+      toast.error(errorMessage);
+      setSubmitStatus({ type: "error", message: errorMessage });
     } finally {
       setIsSubmitting(false);
     }
@@ -256,6 +262,16 @@ export default function Careers() {
                     </div>
                   )}
                 </div>
+
+                {submitStatus && (
+                  <p
+                    className={`text-sm text-center ${
+                      submitStatus.type === "success" ? "text-green-500" : "text-destructive"
+                    }`}
+                  >
+                    {submitStatus.message}
+                  </p>
+                )}
 
                 <Button
                   type="submit"
