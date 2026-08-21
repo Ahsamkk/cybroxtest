@@ -6,6 +6,8 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Send } from "lucide-react";
 import { useState, useEffect, useRef } from "react";
+import { toast } from "sonner";
+import { api } from "@/lib/api";
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -15,6 +17,7 @@ export default function Contact() {
     message: "",
     service: ""
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
 
@@ -48,11 +51,18 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Form submitted:", formData);
-    alert("Thank you for your message! We'll get back to you soon.");
-    setFormData({ name: "", email: "", company: "", message: "", service: "" });
+    setIsSubmitting(true);
+    try {
+      await api.post("/api/contact", formData);
+      toast.success("Thank you for your message! We'll get back to you soon.");
+      setFormData({ name: "", email: "", company: "", message: "", service: "" });
+    } catch (error) {
+      toast.error("Something went wrong sending your message. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -152,9 +162,10 @@ export default function Contact() {
                     <Button
                       type="submit"
                       size="lg"
+                      disabled={isSubmitting}
                       className="w-full bg-primary hover:bg-primary/90 text-lg py-6 group"
                     >
-                      Send Message
+                      {isSubmitting ? "Sending..." : "Send Message"}
                       <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Button>
                   </form>

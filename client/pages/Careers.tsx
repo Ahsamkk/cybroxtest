@@ -4,6 +4,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Label } from "@/components/ui/label";
 import { Briefcase, FileUp, Send, UploadCloud, X } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
+import { toast } from "sonner";
+import { api } from "@/lib/api";
+
+const MAX_RESUME_SIZE = 5 * 1024 * 1024;
+const ALLOWED_RESUME_TYPES = [
+  "application/pdf",
+  "application/msword",
+  "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+];
 
 export default function Careers() {
   const [formData, setFormData] = useState({
@@ -13,6 +22,7 @@ export default function Careers() {
     position: "",
   });
   const [resume, setResume] = useState<File | null>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const sectionRefs = useRef<(HTMLElement | null)[]>([]);
@@ -47,13 +57,32 @@ export default function Careers() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("Application submitted:", formData, resume);
-    alert("Successfully submitted!");
-    setFormData({ name: "", email: "", phone: "", position: "" });
-    setResume(null);
-    if (fileInputRef.current) fileInputRef.current.value = "";
+    if (!resume) {
+      toast.error("Please attach your CV / resume.");
+      return;
+    }
+
+    const body = new FormData();
+    body.append("name", formData.name);
+    body.append("email", formData.email);
+    body.append("phone", formData.phone);
+    body.append("position", formData.position);
+    body.append("resume", resume);
+
+    setIsSubmitting(true);
+    try {
+      await api.post("/api/careers", body);
+      toast.success("Successfully submitted!");
+      setFormData({ name: "", email: "", phone: "", position: "" });
+      setResume(null);
+      if (fileInputRef.current) fileInputRef.current.value = "";
+    } catch (error) {
+      toast.error("Something went wrong submitting your application. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (
@@ -67,6 +96,18 @@ export default function Careers() {
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0] ?? null;
+    if (file) {
+      if (!ALLOWED_RESUME_TYPES.includes(file.type)) {
+        toast.error("Please upload a PDF, DOC or DOCX file.");
+        e.target.value = "";
+        return;
+      }
+      if (file.size > MAX_RESUME_SIZE) {
+        toast.error("Resume must be 5MB or smaller.");
+        e.target.value = "";
+        return;
+      }
+    }
     setResume(file);
   };
 
@@ -219,9 +260,10 @@ export default function Careers() {
                 <Button
                   type="submit"
                   size="lg"
+                  disabled={isSubmitting}
                   className="w-full bg-primary hover:bg-primary/90 text-lg py-6 group"
                 >
-                  Submit Application
+                  {isSubmitting ? "Submitting..." : "Submit Application"}
                   <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </form>
